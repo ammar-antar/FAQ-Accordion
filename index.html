@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A responsive FAQ accordion built with HTML, CSS, and JavaScript featuring smooth animations, keyboard navigation, and accessible design.">
+
+    <title>Frontend Mentor | FAQ Accordion</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-top"></div>
+
+    <main class="container">
+      <div class="faq-card">
+        <div class="head">
+          <img
+            src="assets/images/icon-star.svg"
+            alt="icon star"
+            aria-hidden="true"
+          />
+          <h1>FAQs</h1>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h2 class="faq-title">
+              <button
+                type="button"
+                aria-expanded="false"
+                aria-controls="answer-1"
+                class="faq-trigger"
+              >
+                What is Frontend Mentor, and how will it help me?
+                <img
+                  src="assets/images/icon-plus.svg"
+                  alt="icon plus"
+                  class="icon"
+                />
+              </button>
+            </h2>
+            <div id="answer-1" class="faq-answer">
+              <div class="answer-content">
+                <p>
+                  Frontend Mentor offers realistic coding challenges to help
+                  developers improve their frontend coding skills with projects
+                  in HTML, CSS, and JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h2 class="faq-title">
+              <button type="button" aria-expanded="false" class="faq-trigger">
+                Is Frontend Mentor free?
+                <img src="assets/images/icon-plus.svg" alt="" class="icon" />
+              </button>
+            </h2>
+            <div id="answer-2" class="faq-answer">
+              <div class="answer-content">
+                <p>
+                  Yes, Frontend Mentor offers both free and premium coding
+                  challenges, with the free option providing access to a wide
+                  range of projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h2 class="faq-title">
+              <button type="button" aria-expanded="false" class="faq-trigger">
+                Can I use Frontend Mentor projects in my portfolio?
+                <img src="assets/images/icon-plus.svg" alt="" class="icon" />
+              </button>
+            </h2>
+            <div id="answer-3" class="faq-answer">
+              <div class="answer-content">
+                <p>
+                  Yes, you can use projects completed on Frontend Mentor in your
+                  portfolio. It's an excellent way to showcase your skills to
+                  potential employers!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h2 class="faq-title">
+              <button type="button" aria-expanded="false" class="faq-trigger">
+                What is the best way to review my code?
+                <img src="assets/images/icon-plus.svg" alt="" class="icon" />
+              </button>
+            </h2>
+            <div id="answer-4" class="faq-answer">
+              <div class="answer-content">
+                <p>
+                  We recommend using the solution review and commenting channels
+                  in the Discord server...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="mailto:ammar.antarh@gmail.com">Ammar Antar</a>.
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
